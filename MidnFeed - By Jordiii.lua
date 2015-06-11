@@ -11,5 +11,6 @@ function OnTick()
 			_loaded = true
 		end
 		if myHero.team == 100 then myHero:MoveTo(25000,25000) else myHero:MoveTo(0,0) end CastSpell(4) CastSpell(5) 
-	end
+		if myhero.dead then if aaa == nil then aa = GetTickCount() end if GetTickCount() > aaa then SendChat("Surrender this game noobs") aaa = GetTickCount() + 80000
+    end
 end
